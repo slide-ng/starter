@@ -71,6 +71,10 @@ Version 2.1 adds `navPosition` to move the navigation bar (commented out in the 
 to write one deck in several languages with a language menu in the bar. See the
 [slide.ng changelog](https://github.com/slide-ng/slide.ng/blob/main/CHANGELOG.md).
 
+Version 2.2 adds Nav Bar Position to the settings menu, so a viewer can move the bar, and `slide-ng.config.yaml`: the keys
+of the headmatter in a file of their own next to `slides.md` (the headmatter wins when a key is in both). This deck keeps its
+options in the headmatter.
+
 ## For the repository owner
 
 Mark the repository as a template (Settings > Template repository). The workflows use `npm ci` with the committed `package-lock.json`; update it with `npm install` when you change the `@slide-ng/core` range in `package.json`.
