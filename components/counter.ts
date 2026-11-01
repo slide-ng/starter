@@ -4,13 +4,7 @@ import { Component, input, signal } from '@angular/core';
 // Every exported component with a selector in components/ is found automatically.
 @Component({
   selector: 'starter-counter',
-  template: `
-    <div class="inline-flex items-center border border-gray-400 rounded-md">
-      <button class="px-3 py-2 font-mono hover:bg-gray-400/20" (click)="n.update((v) => v - 1)">-</button>
-      <span class="px-4 min-w-12 text-center">{{ n() }}</span>
-      <button class="px-3 py-2 font-mono hover:bg-gray-400/20" (click)="n.update((v) => v + 1)">+</button>
-    </div>
-  `,
+  templateUrl: './counter.html',
 })
 export class StarterCounter {
   start = input(0);

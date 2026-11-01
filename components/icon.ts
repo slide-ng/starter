@@ -6,7 +6,7 @@ import { NgIcon } from '@ng-icons/core';
 @Component({
   selector: 'starter-icon',
   imports: [NgIcon],
-  template: `<ng-icon [name]="name()" [size]="size()" [color]="color()" [strokeWidth]="strokeWidth()" />`,
+  templateUrl: './icon.html',
 })
 export class StarterIcon {
   name = input.required<string>();
