@@ -75,6 +75,19 @@ Version 2.2 adds Nav Bar Position to the settings menu, so a viewer can move the
 of the headmatter in a file of their own next to `slides.md` (the headmatter wins when a key is in both). This deck keeps its
 options in the headmatter.
 
+Version 3.0 adds the deck browser: `b`, or the globe button in the bar, opens a browser with tabs over the current slide,
+with search, bookmarks and a start page. With `npm run dev`, pages load through a local proxy, so most sites show inside the
+deck. `browser` in the headmatter sets it up (commented out in `slides.md`), and `browser: false` removes it. The bar can
+also be dragged by its grip to another place. Your own slides might notice a change:
+
+- links to other sites on a slide open in the deck browser instead of a new tab (`browser: { links: false }` keeps the
+  new tab; Cmd/Ctrl/Shift/Alt+click still opens one);
+- `b` is a new key;
+- in fullscreen, Chrome and Edge ask once to let the deck keep the Escape key, so Escape closes the deck browser first;
+- `npm run dev` opens one more local port, for the proxy.
+
+The tutorial deck has no links to other sites, so it shows the same on 3.0.
+
 ## For the repository owner
 
 Mark the repository as a template (Settings > Template repository). The workflows use `npm ci` with the committed `package-lock.json`; update it with `npm install` when you change the `@slide-ng/core` range in `package.json`.
