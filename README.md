@@ -47,12 +47,12 @@ npm run format     # tidies the markdown
 
 Syntax, themes, export options, offline mode and deployment are covered in the documentation at [slide-ng.dev](https://slide-ng.dev).
 
-## Upgrading a deck made with 1.x
+## Upgrading a deck made with 1.x or 2.x
 
-This starter uses `@slide-ng/core` 2.x. A talk started from an earlier copy of it moves up with:
+This starter uses `@slide-ng/core` 3.x. A talk started from an earlier copy of it moves up with:
 
 ```sh
-npm install @slide-ng/core@^2.0.0
+npm install @slide-ng/core@^3.0.0
 ```
 
 The tutorial deck needed no changes for 2.0. Your own slides might: read "Upgrading from 1.x" in the
