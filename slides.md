@@ -16,6 +16,10 @@ duration: 20min
 # Where the navigation bar sits: bottom-left (the default), bottom-center, bottom-right, top-left,
 # top-center or top-right.
 # navPosition: bottom-left
+# The deck browser ('b' or the globe button): tiles for its start page, or false to remove it.
+# browser:
+#   tabs:
+#     - { name: Angular, url: https://angular.dev }
 # A thin bar along the bottom that fills as the talk goes on (also 'top', or false for none).
 progressBar: true
 ---
