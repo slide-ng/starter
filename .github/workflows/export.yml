@@ -23,7 +23,7 @@ jobs:
       - run: npx slide-ng export --output slides.pdf
         env:
           CHROME_PATH: /usr/bin/google-chrome
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: slides-pdf
           path: slides.pdf
