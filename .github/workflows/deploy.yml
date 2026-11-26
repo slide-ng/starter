@@ -34,7 +34,7 @@ jobs:
           repo="${GITHUB_REPOSITORY#*/}"
           case "$repo" in *.github.io) base="/" ;; *) base="/$repo/" ;; esac
           npx slide-ng build --base "$base"
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
       - id: deployment
